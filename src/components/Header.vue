@@ -8,11 +8,11 @@
       >
         <div class="w-full flex flex-row items-center justify-between py-6">
           <div>
-            <img
+            <!-- <img
               src="../assets/undraw_bitcoin.svg"
               class="w-8 xl:w-28"
               alt="Logo"
-            />
+            /> -->
           </div>
           <button
             class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline"

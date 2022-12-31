@@ -11,7 +11,7 @@
           <span
             data-aos="fade-right"
             data-aos-delay="200"
-            class="text-base text-gradient font-semibold uppercase p-1 rounded-2xl"
+            class="text-base text-gradient font-semibold uppercase p-2 rounded-2xl text-white"
             >Sign Up Today</span
           >
           <h1
@@ -68,9 +68,9 @@
           class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
         />
       </section>
-      <div class="flex items-center justify-center">
+      <!-- <div class="flex items-center justify-center">
         <div class="led" v-for="n in 3" :key="n" />
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -102,7 +102,11 @@
           class="col-span-12 lg:col-span-6"
         >
           <div class="w-full">
-            <img src="../assets/images/bitcoin.png" class="w-full" alt="" />
+            <img
+              src="../assets/images/crypto-icon3.png"
+              class="w-full"
+              alt=""
+            />
           </div>
         </div>
         <div
@@ -111,10 +115,10 @@
           class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8"
         >
           <span
-            class="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2"
-            >Wait!</span
-          >
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">
+            class="text-base text-gradient font-semibold uppercase sm:mb-2 text-white p-2 rounded-xl"
+            >Wait!
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6 mt-1">
             But that's not all.
           </h2>
           <div class="space-y-4 sm:space-y-2">
@@ -199,16 +203,16 @@
       </div>
     </section>
   </section>
-  <br />
-  <br />
   <!--Explanation Section-->
-  <section class="w-full my-36">
+  <section class="w-full my-24">
     <div
       class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
-      data-aos="fade-down"
+      data-aos="fade-up"
       data-aos-delay="200"
     >
-      <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
+      <div
+        class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20 sm:mb-2"
+      >
         <h2 class="text-4xl font-semibold">
           Nope, not <span class="text-header-gradient">Finished</span>
         </h2>
@@ -220,12 +224,12 @@
           and make informed decisions.
         </p>
         <button
-          class="w-full sm:max-w-[240px] px-6 py-2 bg-inherit text-gradient border border-[#0c66ee] text-base rounded-2xl"
+          class="w-full sm:max-w-[240px] sm:mb-2 px-6 py-2 text-white bg-inherit text-gradient border border-[#0c66ee] text-base rounded-2xl"
         >
           Join the waitlist
         </button>
       </div>
-      <div class="col-span-12 lg:col-span-7">
+      <div class="col-span-12 lg:col-span-7 mt-4">
         <div class="w-full">
           <img
             src="../assets/undraw_crypto_portfolio.svg"
@@ -236,8 +240,78 @@
       </div>
     </div>
   </section>
-  <br />
-  <br />
+  <section
+    class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow-2xl sm:rounded-2xl overflow-hidden drop-shadow-2xl"
+  >
+    <div class="w-full py-16 flex flex-col items-center">
+      <h2
+        data-aos="flip-down"
+        data-aos-delay="300"
+        class="text-3xl sm:text-4xl font-semibold text-center"
+      >
+        Get started in just a few minutes
+      </h2>
+      <div
+        data-aos="flip-up"
+        data-aos-delay="300"
+        class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
+      >
+        <div
+          class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center"
+        >
+          <img
+            src="../assets/icons/getting-started/sign-up.png"
+            class="max-w-[245px] mx-auto"
+            alt=""
+          />
+          <h3 class="text-xl text-neutral-800 font-semibold">Sign Up</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">
+            Sign up for free to CryptoInsight.
+          </p>
+        </div>
+        <div
+          class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center"
+        >
+          <img
+            src="../assets/icons/getting-started/fund.png"
+            class="max-w-[245px] mx-auto"
+            alt=""
+          />
+          <h3 class="text-xl text-neutral-800 font-semibold">Get Insights</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">
+            Don't forget to check your email every evening. Everything about
+            crypto, in just a few sentences.
+          </p>
+        </div>
+        <div
+          class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center"
+        >
+          <img
+            src="../assets/icons/getting-started/buy-crypto.png"
+            class="max-w-[245px] mx-auto"
+            alt=""
+          />
+          <h3 class="text-xl text-neutral-800 font-semibold">
+            Don't Lose Money
+          </h3>
+          <p class="text-sm text-gray-700 leading-relaxed">
+            Keep track of the industry and stay up to date. This way you won't
+            lose money. On the contrary, you'll earn more.
+          </p>
+        </div>
+        <img
+          src="../assets/icons/getting-started/arrow.png"
+          class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
+          alt=""
+        />
+        <img
+          src="../assets/icons/getting-started/arrow.png"
+          class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
+          alt=""
+        />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>

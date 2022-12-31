@@ -14,8 +14,6 @@ import SecondComp from "./components/secondComp.vue";
       <!-- Home-->
       <Home />
 
-      <SecondComp />
-
       <!-- App footer -->
       <Footer />
     </div>
