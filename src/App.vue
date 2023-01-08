@@ -25,7 +25,7 @@ import SecondComp from "./components/secondComp.vue";
 //     });
 // };
 
-getNews();
+//getNews();
 </script>
 
 <template>
