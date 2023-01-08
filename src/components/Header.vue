@@ -7,7 +7,10 @@
         class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8"
       >
         <div class="w-full flex flex-row items-center justify-between py-6">
+
           <div>
+            <button class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl">Go to Crypto News Summaries</button>
+
             <!-- <img
               src="../assets/undraw_bitcoin.svg"
               class="w-8 xl:w-28"
@@ -20,9 +23,13 @@
           ></button>
         </div>
       </div>
+
+
       <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
         <button
           class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl"
+          @click="showM()"
+
         >
           Sign Up
         </button>

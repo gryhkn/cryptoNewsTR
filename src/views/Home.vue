@@ -1,4 +1,54 @@
 <template>
+  <div>
+    <div v-if="showModal" class="modal-overlay">
+      <div class="modal-content">
+        <iframe src="https://gryhkn.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <button @click="closeM()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+
+  <nav id="navbar" class="relative z-10 w-full text-neutral-800">
+    <div
+        class="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4"
+    >
+      <div
+          class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8"
+      >
+        <div class="w-full flex flex-row items-center justify-between py-6">
+
+          <div>
+            <button class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl">Go to Crypto News Summaries</button>
+
+            <!-- <img
+              src="../assets/undraw_bitcoin.svg"
+              class="w-8 xl:w-28"
+              alt="Logo"
+            /> -->
+          </div>
+          <button
+              class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline"
+              @click="open = !open"
+          ></button>
+        </div>
+      </div>
+
+
+      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
+        <button
+            class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl"
+            @click="showM()"
+
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Header -->
+
   <div class="container mx-auto mt-10">
     <div class="mb-5 sm:mb-8 pb-24">
       <section
@@ -67,11 +117,13 @@
           src="../assets/icons/pattern/star.png"
           class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
         />
+
       </section>
       <!-- <div class="flex items-center justify-center">
         <div class="led" v-for="n in 3" :key="n" />
       </div> -->
     </div>
+
   </div>
 
   <section
@@ -108,7 +160,9 @@
               alt=""
             />
           </div>
+
         </div>
+
         <div
           data-aos="fade-up"
           data-aos-delay="200"
@@ -225,6 +279,8 @@
         </p>
         <button
           class="w-full sm:max-w-[240px] sm:mb-2 px-6 py-2 text-white bg-inherit text-gradient border border-[#0c66ee] text-base rounded-2xl"
+          @click="showM()"
+
         >
           Join the waitlist
         </button>
@@ -310,12 +366,28 @@
           alt=""
         />
       </div>
+
     </div>
+
+
+
   </section>
+  <div class="flex items-center justify-center m-10 space-x-20">
+    <div>
+      <button @click="gotoNews()" class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl">Go to Crypto News Summaries</button>
+    </div>
+    <div>
+      <iframe src="https://gryhkn.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
+    </div>
+
+  </div>
+
+
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import AOS from "aos";
 
 import LandingListItem from "../components/ListItem.vue";
@@ -323,8 +395,23 @@ import LandingListItem from "../components/ListItem.vue";
 onMounted(() => {
   AOS.init();
 });
+
+const gotoNews = () => {
+  console.log("gotoNews");
+};
+
+const showModal = ref(false);
+
+const showM = () => {
+  showModal.value = true;
+};
+
+const closeM = () => {
+  showModal.value = false;
+};
+
 </script>
-<style scoped>
+<style>
 .text-header-gradient {
   background: rgb(57, 132, 244);
   background: linear-gradient(
@@ -372,5 +459,26 @@ hr.style11 {
   height: 6px;
   background: url(http://ibrahimjabbari.com/images/hr-11.png) repeat-x 0 0;
   border: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  z-index: 1000;
 }
 </style>
