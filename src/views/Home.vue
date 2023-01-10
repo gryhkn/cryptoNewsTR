@@ -2,7 +2,14 @@
   <div>
     <div v-if="showModal" class="modal-overlay">
       <div class="modal-content">
-        <iframe src="https://gryhkn.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <iframe
+          src="https://gryhkn.substack.com/embed"
+          width="480"
+          height="320"
+          style="border: 1px solid #eee; background: white"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
         <button @click="closeM()">Close</button>
       </div>
     </div>
@@ -10,59 +17,37 @@
 
   <!-- Header -->
 
-  <nav id="navbar" class="relative z-10 w-full text-neutral-800">
-    <div
-        class="flex flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4"
-    >
-      <div
-          class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8"
-      >
-        <div class="w-full flex flex-row items-center justify-between py-6">
-
-          <div>
-            <button class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl">Go to Crypto News Summaries</button>
-
-            <!-- <img
-              src="../assets/undraw_bitcoin.svg"
-              class="w-8 xl:w-28"
-              alt="Logo"
-            /> -->
-          </div>
+  <nav id="navbar" class="w-full text-neutral-800">
+    <!-- Button justify end  -->
+    <div class="flex justify-end max-w-screen-xl px-8 mx-auto lg:flex-row py-4">
+      <div class="flex items-end justify-end">
+        <div class="flex items-end justify-end">
           <button
-              class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline"
-              @click="open = !open"
-          ></button>
-        </div>
-      </div>
-
-
-      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
-        <button
             class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl"
             @click="showM()"
-
-        >
-          Sign Up
-        </button>
+          >
+            Sign Up
+          </button>
+        </div>
       </div>
     </div>
   </nav>
   <!-- End Header -->
 
-  <div class="container mx-auto mt-10">
+  <div class="container mx-auto mt-10 max-w-screen-xl">
     <div class="mb-5 sm:mb-8 pb-24">
       <section
-        class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
+        class="px-4 sm:px-8 mx-auto grid grid-cols-6 gap-x-6 overflow-hidden"
       >
         <!-- Banner left contents -->
         <div
-          class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left"
+          class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-2 sm:space-y-6 px-6 text-center sm:text-left"
         >
           <span
             data-aos="fade-right"
             data-aos-delay="200"
-            class="text-base text-gradient font-semibold uppercase p-2 rounded-2xl text-white"
-            >Sign Up Today</span
+            class="rounded-2xl p-2 text-white bg-blue-gradient"
+            >What?</span
           >
           <h1
             data-aos="fade-right"
@@ -117,17 +102,15 @@
           src="../assets/icons/pattern/star.png"
           class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
         />
-
       </section>
       <!-- <div class="flex items-center justify-center">
         <div class="led" v-for="n in 3" :key="n" />
       </div> -->
     </div>
-
   </div>
 
   <section
-    class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-gray-100 shadow-lg sm:shadow-md transform lg:-translate-y-12"
+    class="max-w-screen-xl mx-auto w-full text-center sm:px-6 px-4 py-6 sm:py-8 rounded-2xl bg-gray-100 shadow-lg sm:shadow-md"
   >
     <br />
     <br />
@@ -146,7 +129,7 @@
 
     <section class="w-full my-16 bg-">
       <div
-        class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
+        class="max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
       >
         <div
           data-aos="fade-up"
@@ -160,7 +143,6 @@
               alt=""
             />
           </div>
-
         </div>
 
         <div
@@ -172,7 +154,7 @@
             class="text-base text-gradient font-semibold uppercase sm:mb-2 text-white p-2 rounded-xl"
             >Wait!
           </span>
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6 mt-1">
+          <h2 class="text-3xl sm:text-4xl font-semibold mb-4 sm:mb-2 mt-1">
             But that's not all.
           </h2>
           <div class="space-y-4 sm:space-y-2">
@@ -258,9 +240,9 @@
     </section>
   </section>
   <!--Explanation Section-->
-  <section class="w-full my-24">
+  <section class="w-full my-12 sm:my-6">
     <div
-      class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
+      class="max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
       data-aos="fade-up"
       data-aos-delay="200"
     >
@@ -280,7 +262,6 @@
         <button
           class="w-full sm:max-w-[240px] sm:mb-2 px-6 py-2 text-white bg-inherit text-gradient border border-[#0c66ee] text-base rounded-2xl"
           @click="showM()"
-
         >
           Join the waitlist
         </button>
@@ -297,9 +278,11 @@
     </div>
   </section>
   <section
-    class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow-2xl sm:rounded-2xl overflow-hidden drop-shadow-2xl"
+    class="bg-trading-tools max-w-full sm:mx-4 xl:mx-10 my-24 shadow-2xl sm:rounded-2xl overflow-hidden drop-shadow-2xl"
   >
-    <div class="w-full py-16 flex flex-col items-center">
+    <div
+      class="w-full py-16 flex flex-col items-center sm:flex-col sm:items-center sm:justify-center max-w-screen-xl mx-auto"
+    >
       <h2
         data-aos="flip-down"
         data-aos-delay="300"
@@ -310,7 +293,7 @@
       <div
         data-aos="flip-up"
         data-aos-delay="300"
-        class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
+        class="w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
       >
         <div
           class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center"
@@ -366,24 +349,25 @@
           alt=""
         />
       </div>
-
     </div>
-
-
-
   </section>
-  <div class="flex items-center justify-center m-10 space-x-20">
-    <div>
+  <div
+    class="flex items-center justify-center my-auto sm:flex-col mx-auto mb-10 sm:flex sm:items-center sm:justify-center"
+  >
+    <!-- <div>
       <button @click="gotoNews()" class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl">Go to Crypto News Summaries</button>
-    </div>
+    </div> -->
     <div>
-      <iframe src="https://gryhkn.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-
+      <iframe
+        src="https://gryhkn.substack.com/embed"
+        width="480"
+        height="320"
+        style="border: 1px solid #eee; background: white"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
     </div>
-
   </div>
-
-
 </template>
 
 <script setup>
@@ -395,6 +379,8 @@ import LandingListItem from "../components/ListItem.vue";
 onMounted(() => {
   AOS.init();
 });
+
+const open = ref(false);
 
 const gotoNews = () => {
   console.log("gotoNews");
@@ -410,6 +396,9 @@ const closeM = () => {
   showModal.value = false;
 };
 
+const deneme = () => {
+  console.log("deneme");
+};
 </script>
 <style>
 .text-header-gradient {
@@ -427,32 +416,7 @@ const closeM = () => {
 
 .bg-blue-gradient,
 .text-gradient {
-  background: linear-gradient(136.91deg, #468ef9 -12.5%, #0c66ee 107.5%);
-}
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-.led {
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  border-radius: 50%;
-  animation: blink 1s infinite;
-}
-
-.led:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.led:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.led:nth-child(3) {
-  animation-delay: 1s;
+  background: linear-gradient(136.91deg, #e10f0f -12.5%, #0c66ee 107.5%);
 }
 
 hr.style11 {

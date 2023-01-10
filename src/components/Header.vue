@@ -45,4 +45,8 @@ let dropdownNavbar = false;
 function dropdownToggler() {
   dropdownNavbar = !dropdownNavbar;
 }
+
+
+
+
 </script>
