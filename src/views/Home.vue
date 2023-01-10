@@ -36,9 +36,7 @@
 
   <div class="container mx-auto mt-10 max-w-screen-xl">
     <div class="mb-5 sm:mb-8 pb-24">
-      <section
-        class="px-4 sm:px-8 mx-auto grid grid-cols-6 gap-x-6 overflow-hidden"
-      >
+      <section class="relative px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6">
         <!-- Banner left contents -->
         <div
           class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-2 sm:space-y-6 px-6 text-center sm:text-left"
@@ -110,7 +108,7 @@
   </div>
 
   <section
-    class="max-w-screen-xl mx-auto w-full text-center sm:px-6 px-4 py-6 sm:py-8 rounded-2xl bg-gray-100 shadow-lg sm:shadow-md"
+    class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-gray-100 shadow-lg sm:shadow-md transform lg:-translate-y-12"
   >
     <br />
     <br />
@@ -129,7 +127,7 @@
 
     <section class="w-full my-16 bg-">
       <div
-        class="max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
+        class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6"
       >
         <div
           data-aos="fade-up"
@@ -242,7 +240,7 @@
   <!--Explanation Section-->
   <section class="w-full my-12 sm:my-6">
     <div
-      class="max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"
+      class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6"
       data-aos="fade-up"
       data-aos-delay="200"
     >
@@ -278,7 +276,7 @@
     </div>
   </section>
   <section
-    class="bg-trading-tools max-w-full sm:mx-4 xl:mx-10 my-24 shadow-2xl sm:rounded-2xl overflow-hidden drop-shadow-2xl"
+    class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow-2xl sm:rounded-2xl drop-shadow-2xl"
   >
     <div
       class="w-full py-16 flex flex-col items-center sm:flex-col sm:items-center sm:justify-center max-w-screen-xl mx-auto"
@@ -293,7 +291,7 @@
       <div
         data-aos="flip-up"
         data-aos-delay="300"
-        class="w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
+        class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
       >
         <div
           class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center"
@@ -352,7 +350,7 @@
     </div>
   </section>
   <div
-    class="flex items-center justify-center my-auto sm:flex-col mx-auto mb-10 sm:flex sm:items-center sm:justify-center"
+    class="flex items-center justify-center mb-4 my-auto sm:flex-col mx-auto"
   >
     <!-- <div>
       <button @click="gotoNews()" class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white rounded-2xl">Go to Crypto News Summaries</button>
