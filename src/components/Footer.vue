@@ -1,16 +1,14 @@
 <template>
-  <div class="bg-gray-100">
-    <div
-      class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
-    >
+  <div class="bg-gray-100 items-center md:justify-center justify-center">
+    <div class="px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
       <a
-        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        class="flex title-font font-medium items-center md:justify-center justify-center text-gray-900"
       >
         <i data-feather="terminal"></i>
-        <span class="ml-3 text-xl">CryptoInsights</span>
+        <span class="ml-3 text-xl">KriptoÖzetleri</span>
       </a>
       <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-        © {{ copyrightDate }} CryptoInsights —
+        © {{ copyrightDate }} KriptoÖzetleri —
         <a
           href="https://twitter.com/gryhkn"
           rel="noopener noreferrer"
@@ -53,7 +51,6 @@
         </a>
       </span>
     </div>
-
   </div>
 </template>
 
