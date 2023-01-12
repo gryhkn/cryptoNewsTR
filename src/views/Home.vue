@@ -75,7 +75,7 @@
               class="underline decoration-indigo-500"
               @mouseover="hover = true"
               @mouseleave="hover = false"
-              >(sadece 2 cümle ile)</a
+              >(sadece ikişer cümle ile)</a
             >
             <span v-if="hover" class="text-indigo-500 bg-blue-300"
               >State-of-the-art AI yöntemlerini kullanarak</span
@@ -335,7 +335,7 @@
           <h3 class="text-xl text-neutral-800 font-semibold">Takipte Kal</h3>
           <p class="text-sm text-gray-700 leading-relaxed">
             Her akşam mailinizi kontrol etmeyi unutmayın. Unutmayın, kripto
-            hakkında en önemli şeyler ve sadece 2 cümle.
+            hakkında en önemli şeyler ve sadece ikişer cümle.
           </p>
         </div>
         <div
